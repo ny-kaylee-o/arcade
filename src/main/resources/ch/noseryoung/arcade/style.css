@@ -1,0 +1,40 @@
+/* ============================================
+   arcade_home.css
+   Place this in: src/main/resources/assets/ui/css/
+   ============================================ */
+
+.bg-placeholder {
+    /* Swap this for -fx-fill or an image pattern once you have your own art */
+    -fx-fill: #0d0d1a;
+}
+
+.title-text {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 4px;
+}
+
+.arcade-button {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #39ff14;
+    -fx-background-color: transparent;
+    -fx-border-color: #39ff14;
+    -fx-border-width: 2px;
+    -fx-padding: 10px 40px;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.arcade-button:hover {
+    -fx-text-fill: #0d0d1a;
+    -fx-background-color: #39ff14;
+    -fx-effect: dropshadow(gaussian, #39ff14, 20, 0.6, 0, 0);
+}
+
+.arcade-button:pressed {
+    -fx-background-color: #2bd60f;
+    -fx-text-fill: #000000;
+}

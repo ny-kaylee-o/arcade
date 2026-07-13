@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ch.noseryoung.arcade.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<StackPane prefHeight="540" prefWidth="960" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.noseryoung.arcade.HelloController">
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+    <!-- Placeholder background: replace with an ImageView once you have your own art -->
+    <Rectangle height="540" styleClass="bg-placeholder" width="960" />
+
+    <VBox alignment="CENTER" spacing="60">
+        <Text fill="WHITE" styleClass="title-text" text=":3">
+         <font>
+            <Font size="96.0" />
+         </font></Text>
+
+        <VBox alignment="CENTER" spacing="20">
+            <Button onAction="#onPlayClicked" styleClass="arcade-button" text="PLAY" />
+            <Button onAction="#onExitClicked" styleClass="arcade-button" text="EXIT" />
+        </VBox>
+    </VBox>
+
+</StackPane>

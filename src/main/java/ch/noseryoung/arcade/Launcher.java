@@ -1,9 +1,7 @@
 package ch.noseryoung.arcade;
 
-import javafx.application.Application;
-
 public class Launcher {
     public static void main(String[] args) {
-        Application.launch(HelloApplication.class, args);
+        HelloApplication.launch(HelloApplication.class, args);
     }
 }

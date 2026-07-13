@@ -1,6 +1,7 @@
 module ch.noseryoung.arcade {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.logging;
 
     requires com.almasb.fxgl.all;
 

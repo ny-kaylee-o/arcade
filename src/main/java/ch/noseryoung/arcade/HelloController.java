@@ -1,14 +1,28 @@
 package ch.noseryoung.arcade;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+
+import java.util.logging.Logger;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+
+    private static final Logger LOGGER = Logger.getLogger(HelloController.class.getName());
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private void onPlayClicked() {
+        new Thread(HelloApplication::startGame).start();
+    }
+
+    @FXML
+    private void onOptionsClicked() {
+        // Hook up an options screen/dialog here later
+        LOGGER.info("Options clicked");
+    }
+
+    @FXML
+    private void onExitClicked() {
+        Platform.exit();
+        System.exit(0);
     }
 }
