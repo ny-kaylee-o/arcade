@@ -5,7 +5,7 @@ function MainMenuPage() {
   const navigate = useNavigate();
 
   const handleSlotMachine = () => {
-    // TODO: navigate to the slot machine game once it exists
+    navigate("/slot-machine");
   };
 
   return (
